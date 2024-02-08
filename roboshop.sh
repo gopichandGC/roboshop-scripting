@@ -22,20 +22,20 @@ do
 #Creating new R53 record, Make sure you delete the existing record
   aws route53 change-resource-record-sets \
   --hosted-zone-id $ZONE_ID \
-  --change-batch "
+  --change-batch '
   {
     "Comment": "Testing creating a record set"
     ,"Changes": [{
       "Action"              : "CREATE"
       ,"ResourceRecordSet"  : {
-        "Name"              : "$i.$DOMAIN_NAME"
+        "Name"              : "'$i'.'$DOMAIN_NAME'"
         ,"Type"             : "A"
         ,"TTL"              : 1
         ,"ResourceRecords"  : [{
-            "Value"         : "$IP_ADDRESS"
+            "Value"         : "$'IP_ADDRESS'"
         }]
     }
     }]
   }
-  "
+  '
 done
