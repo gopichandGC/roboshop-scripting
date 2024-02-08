@@ -10,7 +10,7 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
-MYSQL_HOST=mongodb.techwithgopi.online
+MYSQL_HOST=mysql.techwithgopi.online
 
 echo "Script Started Executing at $TIMESTAMP" &>> $LOGFILE
 
