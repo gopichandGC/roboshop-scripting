@@ -2,7 +2,7 @@
 
 AMI=ami-0f3c7d07486cad139
 SG_ID=sg-0523f705109b77eaa
-INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
+INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 ZONE_ID=Z01392352BS5MX7GMAHS1
 DOMAIN_NAME="techwithgopi.online"
 
